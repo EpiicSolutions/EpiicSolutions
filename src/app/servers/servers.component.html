@@ -1,0 +1,20 @@
+ servers works!
+ <br/>
+ <input type="text" class="form-control"
+ (input)="onUpdateServerName($event)"
+ />
+  <input type="text" class="form-control"
+ [(ngModel)]="serverNameStr"
+ />
+ {{serverNameStr}}
+ <button class="btn btn-success" 
+ (click)="serverCreated()" 
+ [disabled]="!allowNewServer">Add Server</button>
+{{allowNewServer}} 
+{{serverCreationStatus}}
+
+
+<p *ngIf="allowNewServer">Success </p>
+<p [ngStyle]="{backgroundColor:getColor()}" 
+[ngClass]="{online:serverCreationStatus==='true'}"
+  >green Color Success </p>
