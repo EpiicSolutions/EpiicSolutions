@@ -1,10 +1,10 @@
-import { EpiicPage } from './app.po';
+import { EpiicSolutionsPage } from './app.po';
 
-describe('epiic App', () => {
-  let page: EpiicPage;
+describe('epiic-solutions App', () => {
+  let page: EpiicSolutionsPage;
 
   beforeEach(() => {
-    page = new EpiicPage();
+    page = new EpiicSolutionsPage();
   });
 
   it('should display message saying app works', () => {

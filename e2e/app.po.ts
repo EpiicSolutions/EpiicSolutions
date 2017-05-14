@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class EpiicPage {
+export class EpiicSolutionsPage {
   navigateTo() {
     return browser.get('/');
   }
